@@ -597,7 +597,7 @@ main{
 /*------------------monstera--------------------------*/
 
 .monstera {
-	background: url(/image/monstera/monstera.png) 0 0/cover no-repeat;
+	background: url(../image/monstera/monstera.png) 0 0/cover no-repeat;
 	height: 75vh;
 }
 .monstera__big-container {
@@ -673,7 +673,7 @@ main{
 /*----------------starfall----------------------------*/
 
 .strafall {
-	background: url(/image/strafall/strafall.png) 0 0/cover no-repeat;
+	background: url(../image/strafall/strafall.png) 0 0/cover no-repeat;
 	height: 75vh;
 }
 .strafall__big-container {
