@@ -444,18 +444,36 @@ main{
 }
 .body-whatwedo__image {
 	width: 100%;
-	transition: all 0.3s ease 0s;
-	animation: scale 2s infinite alternate;
+	
 }
-@keyframes scale {
+.body-whatwedo__image{
+	
+}
+.animatio-odd{
+	animation: odd 2s infinite alternate linear;
+}
+.animatio-even{
+	animation: even 2s infinite alternate linear; 
+	animation-delay: 1s;
+}
+
+@keyframes odd {
 	0%{
 		transform: scale(1);
 	}
 	100%{
-		transform: scale(1.1);
+		transform: scale(1.05);
 	}
-	
 }
+@keyframes even {
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.05);
+	}
+}
+
 @media (max-width: 992px){
 	.whatwedo {
 		padding: 70px 0px 50px 0px;
@@ -906,17 +924,20 @@ main{
 }
 .footer__lower-list {
 	display: flex;
+	gap: 1.25rem;
 }
-.footer__lower-item:not(:last-child){
-	margin-right: 20px;
-}
+
 .footer__lower-item {
+	padding: 0.625rem;
+	border-radius: 50%;
 }
 .footer__lower-link {
 }
 .footer__lower-link img{
 	height: 24px;
 }
+
+
 @media (max-width: 575.8px){
 
 	.footer__lower{
