@@ -746,7 +746,7 @@ main{
 .help__items {
 }
 .item-help{
-	width: 571px;
+	max-width: 571px;
 }
 .item-help__title {
 	font-size: 40px;
