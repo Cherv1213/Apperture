@@ -145,7 +145,8 @@ main{
 .button::before{
 	content: '';
 	position: absolute;
-	top: 5px;
+	top: 50%;
+	transform: translateY(-50%);
 	left: 6px;
 	width: 32px;
 	height: 32px;
