@@ -62,12 +62,14 @@ body._lock{
 	padding: 0px 15px;
 	box-sizing: content-box;
 	margin: 0 auto;
+
 }
 [class*="__big-container"]{
 	max-width: 1315px;
 	padding: 0px 15px;
 	box-sizing: content-box;
 	margin: 0 auto;
+	position: relative;
 }
 
 main{
@@ -97,10 +99,11 @@ main{
 }
 /*--------------------------------------------*/
 .camera{
-	justify-content: flex-end;
+	position: absolute;
+	bottom: 2.5rem;
+	right: 1rem;
 	display: flex;
 	flex-wrap: wrap;
-	padding-bottom: 40px;
 	gap: 1rem;
 }
 .camera-item{
@@ -345,13 +348,12 @@ main{
 /*-------------------------studios-------------------*/
 
 .studios {
-	display: flex;
 	background: url(../image/Studio/background.png) 0px 0px/cover   fixed;
-	align-items: flex-end;
-	height: 100vh;
 }
 .studios__big-container {
-	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: flex-end;
 }
 .studios__body {
 	display: flex;
@@ -359,6 +361,7 @@ main{
 	text-align: center;
 	max-width: 600px;
 	 margin: 0 auto; 
+	 padding-bottom: 6rem;
 }
 .studios__subtitle {
 	letter-spacing: 2px;
@@ -371,7 +374,7 @@ main{
 	color: #FFFFFF;
 }
 .studios__text {
-	padding-bottom: 1.25rem;
+	
 }
 .studios__items {
 
@@ -510,13 +513,13 @@ main{
 }
 .sunset__big-container {
 	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+	align-items: center;
+	justify-content: flex-end;
 	min-height: 75vh;
 }
 .sunset__body {
 	max-width: 300px;
-	margin: auto 2vw auto 0;
+	margin-right:2vw;
 }
 .sunset__title {
 	letter-spacing: 2px;
@@ -538,7 +541,6 @@ main{
 }
 /*-------------------cage-------------------------*/
 .cage {
-	
 	position: relative;
 	overflow: hidden;
 }
@@ -546,7 +548,6 @@ main{
 .cage__big-container {
 	height: 100%;
 	display: flex;
-	flex-direction: column;
 	min-height:60vh;
 }
 .cage__background {
@@ -564,7 +565,7 @@ main{
 	width: 100%;
 }
 .cage__tools {
-	margin: auto 0;
+	padding: 10rem 0;
 }
 .tools-body {
 	color: #FFFFFF;
@@ -596,7 +597,7 @@ main{
 .right-cage {
 }
 .right-cage__items {
-	padding: 0px 0px 40px 0px;
+
 }
 .right-cage-item {
 }
@@ -621,14 +622,14 @@ main{
 }
 .monstera__big-container {
 	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	min-height: 75vh
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 75vh;
 }
 
 .monstera__body {
 	max-width: 300px;
-	margin: auto 2vw auto 0;
+	margin-right:2vw;
 }
 .monstera__title {
 	letter-spacing: 2px;
@@ -639,7 +640,6 @@ main{
 	
 }
 .monsterat-items {
-	padding-bottom: 40px;
 }
 .item-monstera {
 }
@@ -696,13 +696,13 @@ main{
 }
 .strafall__big-container {
 	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	min-height: 75vh
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 75vh;
 }
 .strafall__body {
 	max-width: 300px;
-	margin: auto 2vw auto 0;
+	margin: 0 2vw 0 0;
 }
 .strafall__title {
 	letter-spacing: 2px;
@@ -713,7 +713,6 @@ main{
 	
 }
 .strafall-items {
-	padding-bottom: 40px;
 }
 .item-strafall {
 }
