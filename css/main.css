@@ -506,18 +506,17 @@ main{
 /*---------------------sunset-----------------------*/
 .sunset {
 	background: url(../image/sunset/sunsetback.png) 0px 0px/cover  no-repeat;
-	height: 75vh;
+	
 }
 .sunset__big-container {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	height: 100%;
+	min-height: 75vh;
 }
 .sunset__body {
 	max-width: 300px;
 	margin: auto 2vw auto 0;
-
 }
 .sunset__title {
 	letter-spacing: 2px;
@@ -539,7 +538,7 @@ main{
 }
 /*-------------------cage-------------------------*/
 .cage {
-	height:60vh;
+	
 	position: relative;
 	overflow: hidden;
 }
@@ -548,6 +547,7 @@ main{
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	min-height:60vh;
 }
 .cage__background {
 	position: absolute;
@@ -617,13 +617,13 @@ main{
 
 .monstera {
 	background: url(../image/monstera/monstera.png) 0 0/cover no-repeat;
-	height: 75vh;
+	;
 }
 .monstera__big-container {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	height: 100%;
+	min-height: 75vh
 }
 
 .monstera__body {
@@ -693,13 +693,12 @@ main{
 
 .strafall {
 	background: url(../image/strafall/strafall.png) 0 0/cover no-repeat;
-	height: 75vh;
 }
 .strafall__big-container {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	height: 100%;
+	min-height: 75vh
 }
 .strafall__body {
 	max-width: 300px;
