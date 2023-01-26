@@ -505,7 +505,7 @@ main{
 }
 /*---------------------sunset-----------------------*/
 .sunset {
-	background: url(../image/sunset/sunsetback.png) 0px 0px/cover  no-repeat;
+	background: url(../image/sunset/sunsetback.png) 0px 0px/cover;
 	
 }
 .sunset__big-container {
@@ -616,7 +616,7 @@ main{
 /*------------------monstera--------------------------*/
 
 .monstera {
-	background: url(../image/monstera/monstera.png) 0 0/cover no-repeat;
+	background: url(../image/monstera/monstera.png) 0 0/cover;
 	;
 }
 .monstera__big-container {
@@ -692,7 +692,7 @@ main{
 /*----------------starfall----------------------------*/
 
 .strafall {
-	background: url(../image/strafall/strafall.png) 0 0/cover no-repeat;
+	background: url(../image/strafall/strafall.png) 0 0/cover;
 }
 .strafall__big-container {
 	display: flex;
