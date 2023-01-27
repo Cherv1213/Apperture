@@ -69,7 +69,6 @@ body._lock{
 	padding: 0px 15px;
 	box-sizing: content-box;
 	margin: 0 auto;
-	position: relative;
 }
 
 main{
@@ -101,33 +100,47 @@ main{
 .camera{
 	position: absolute;
 	bottom: 2.5rem;
-	right: 1rem;
+	right: 2.5rem;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
+	padding-left: 5px;
 }
-.camera-item{
+.camera li {
 	display: flex;
 	white-space: nowrap;
-	align-items: flex-start;
-}
-.camera-item:nth-child(1):before{
-	content: url(../image/icons/speed.svg);
-}
-.camera-item:nth-child(2):before{
-	content: url(../image/icons/f.svg);
-}
-.camera-item:nth-child(3):before{
-	content: url(../image/icons/iso.svg);
-}
-.camera-item:nth-child(4):before{
-	content: url(../image/icons/location.svg);
-}
-.camera-info{
 	font-size: 12px;
 	line-height: 1;
-	margin-left: 0.3125rem;
 }
+.camera li:nth-child(1):before{
+	content: url(../image/icons/speed.svg);
+	display: inline-block;
+	margin-right: 10px;
+	height: 1rem;
+	width: 1rem;
+}
+.camera li:nth-child(2):before{
+	content: url(../image/icons/f.svg);
+	display: inline-block;
+	margin-right: 10px;
+	height: 1rem;
+	width: 1rem;
+}
+.camera li:nth-child(3):before{
+	content: url(../image/icons/iso.svg);
+	display: inline-block;
+	margin-right: 10px;
+	height: 1rem;
+	width: 2rem;
+}
+.camera li:nth-child(4):before{
+	content: url(../image/icons/location.svg);
+	display: inline-block;
+	margin-right: 10px;
+	height: 1rem;
+	width: 0.625rem;
+}
+
 .button{
 	padding: 11px 10px 11px 42px;
 	font-size: 15px;
@@ -349,8 +362,9 @@ main{
 
 .studios {
 	background: url(../image/Studio/background.png) 0px 0px/cover   fixed;
+	position: relative;
 }
-.studios__big-container {
+.studios__container {
 	height: 100vh;
 	display: flex;
 	align-items: flex-end;
@@ -373,20 +387,7 @@ main{
 	line-height: 1.1;
 	color: #FFFFFF;
 }
-.studios__text {
-	
-}
-.studios__items {
 
-}
-.items-studios{
-}
-.item-studios {
-}
-.item-studios__icon {
-}
-.item-studios__info {
-}
 @media (max-width: 767.8px){
 	.studios__title {
 		font-size: 34px;
@@ -509,17 +510,17 @@ main{
 /*---------------------sunset-----------------------*/
 .sunset {
 	background: url(../image/sunset/sunsetback.png) 0px 0px/cover;
-	
-}
-.sunset__big-container {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	min-height: 75vh;
+	position: relative;
 }
+
 .sunset__body {
 	max-width: 300px;
-	margin-right:2vw;
+	padding: 0px 0px 0px 5px;
+	margin-right: 15vmin;
 }
 .sunset__title {
 	letter-spacing: 2px;
@@ -618,18 +619,18 @@ main{
 
 .monstera {
 	background: url(../image/monstera/monstera.png) 0 0/cover;
-	;
-}
-.monstera__big-container {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	min-height: 75vh;
+	position: relative;
 }
+
 
 .monstera__body {
 	max-width: 300px;
-	margin-right:2vw;
+	padding: 0px 0px 0px 5px;
+	margin-right: 15vmin;
 }
 .monstera__title {
 	letter-spacing: 2px;
@@ -693,16 +694,17 @@ main{
 
 .strafall {
 	background: url(../image/strafall/strafall.png) 0 0/cover;
-}
-.strafall__big-container {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	min-height: 75vh;
+	position: relative;
 }
+
 .strafall__body {
 	max-width: 300px;
-	margin: 0 2vw 0 0;
+	padding: 0px 0px 0px 5px;
+	margin-right: 15vmin;
 }
 .strafall__title {
 	letter-spacing: 2px;
