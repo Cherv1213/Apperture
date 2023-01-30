@@ -362,6 +362,7 @@ main{
 
 .studios {
 	background: url(../image/Studio/background.png) 0px 0px/cover   fixed;
+	background-position: center;
 	position: relative;
 }
 .studios__container {
@@ -510,6 +511,7 @@ main{
 /*---------------------sunset-----------------------*/
 .sunset {
 	background: url(../image/sunset/sunsetback.png) 0px 0px/cover;
+	background-position: center;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -619,6 +621,7 @@ main{
 
 .monstera {
 	background: url(../image/monstera/monstera.png) 0 0/cover;
+	background-position: center;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -694,6 +697,7 @@ main{
 
 .strafall {
 	background: url(../image/strafall/strafall.png) 0 0/cover;
+	background-position: center;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
