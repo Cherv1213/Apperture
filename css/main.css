@@ -105,6 +105,7 @@ main{
 	flex-wrap: wrap;
 	gap: 1rem;
 	padding-left: 5px;
+	z-index: 5;
 }
 .camera li {
 	display: flex;
@@ -241,7 +242,6 @@ main{
 	text-decoration: underline;
 }
 .menu__buttuon {
-	flex: 0 0 auto;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.25;
@@ -532,16 +532,7 @@ main{
 }
 .sunset__text {
 }
-.sunset-items {
-	
-	
-}
-.item-sunset {
-}
-.item-sunset__icon {
-}
-.item-sunset__info {
-}
+
 /*-------------------cage-------------------------*/
 .cage {
 	position: relative;
@@ -549,7 +540,6 @@ main{
 }
 
 .cage__big-container {
-	height: 100%;
 	display: flex;
 	min-height:60vh;
 }
@@ -559,7 +549,7 @@ main{
 	right: 0;
 	height: 100%;
 	width: 50%;
-	z-index: -1;
+	z-index: 1;
 }
 
 .cage__background img{
@@ -593,23 +583,6 @@ main{
 .tools-body__button {
 }
 
-
-
-.cage__right {
-}
-.right-cage {
-}
-.right-cage__items {
-
-}
-.right-cage-item {
-}
-.right-cage__icon {
-}
-.right-cage__info {
-}
-.right-cage__background {
-}
 @media (max-width: 67.25rem){
 	.cage__background{
 		width: 100%;
@@ -718,22 +691,7 @@ main{
 .strafall__text {
 	
 }
-.strafall-items {
-}
-.item-strafall {
-}
-.camera {
-}
-.camera-item {
-}
-.item-strafall__icon {
-}
-.camera-icon {
-}
-.item-strafall__info {
-}
-.camera-info {
-}
+
 .item-strafall__backgroud {
 	display: flex;
 	flex-direction: column;
@@ -918,7 +876,7 @@ main{
 }
 
 .footer__lower {
-	padding: 55px 0px 100px 0px;
+	padding: 55px 0px 0 0px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
