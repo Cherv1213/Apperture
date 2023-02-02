@@ -747,7 +747,7 @@ main{
 }
 @media (max-width: 575.8px){
 	.footer {
-		padding: 20px;
+		padding: 20px 0;
 	}
 }
 
@@ -836,6 +836,9 @@ main{
 	position: relative;
 }
 .footer__middle-email{
+	position: relative;
+	width: 100%;
+	max-width:24.375rem;;
 	
 }
 .footer__middle-label{
@@ -843,9 +846,7 @@ main{
 }
 .footer__middle-input{
 	padding: 20px 80px 20px 10px;
-	width: 24.375rem;
-	background: #F9FAFB;
-	border: 1px solid #E5E7EB;
+	width: 100%;
 	border-radius: 12px;
 }
 .form-button{
@@ -859,11 +860,6 @@ main{
 	border-radius: 11px;
 }
 
-@media (max-width: 767.8px){
-	.footer__middle-input{
-		width: 15.625rem;
-	}
-}
 
 @media (max-width: 575.8px){
 	.footer__middle{
