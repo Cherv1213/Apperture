@@ -268,7 +268,7 @@ main{
 
 @media (max-width: 775.8px){
 	.menu__buttuon{
-		margin: 0px 50px 0px 0px;
+		margin: 0px 30px 0px 0px;
 	}
    .menu__icon{
       z-index: 5;
@@ -536,7 +536,6 @@ main{
 /*-------------------cage-------------------------*/
 .cage {
 	position: relative;
-	overflow: hidden;
 }
 
 .cage__big-container {
@@ -550,8 +549,9 @@ main{
 	height: 100%;
 	width: 50%;
 	z-index: 1;
+	background-image:url(../image/cage/right-image.png);
+	background-size: cover;
 }
-
 .cage__background img{
 	object-fit: cover;
 	height: 100%;
