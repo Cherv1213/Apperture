@@ -106,6 +106,14 @@ main{
 	gap: 1rem;
 	padding-left: 5px;
 	z-index: 5;
+
+	transform: translateX(120%);
+	transition: all 0.8s ease 0s;
+	opacity: 0;
+}
+.camera._active{
+	transform: translateX(0%);
+	opacity: 1;
 }
 
 .camera li {
@@ -272,6 +280,13 @@ main{
 	max-width: 600px;
 	 margin: 0 auto; 
 	 padding-bottom: 6rem;
+	 transform: translateY(-120%);
+	 transition: all 0.4s ease 0s;
+	 opacity: 0;
+}
+.studios__body._active{
+	transform: translateY(0);
+	opacity: 1;
 }
 .studios__subtitle {
 	letter-spacing: 2px;
@@ -283,8 +298,16 @@ main{
 	line-height: 1.1;
 	color: #FFFFFF;
 }
-
-
+.studios__text{
+	transform: translateY(120%);
+	transition: all 0.4s ease 0s;
+	opacity: 0;
+}
+.studios__text._active{
+	transform: translateY(0);
+	opacity: 1;
+	transition: all 0.3s ease 0.3s;
+}
 
 /*---------------------What we do-----------------------*/
 
@@ -316,10 +339,22 @@ main{
 	overflow: hidden;
 }
 .body-whatwedo__item {
-	align-items: center;
 	position: relative;
 	overflow: hidden;
+	transition: all 0.4s ease 0s;
+	opacity: 0;
 }
+.body-whatwedo__item:nth-child(odd){
+	transform: translateX(-120%);
+}
+.body-whatwedo__item:nth-child(even){
+	transform: translateX(120%);
+}
+.body-whatwedo__item._active{
+	opacity: 1;
+	transform: translateX(0);
+}
+
 .body-whatwedo__info{
 	padding: 0px 5px 30px 30px;
 	position: absolute;
@@ -471,21 +506,7 @@ main{
 	text-transform: uppercase;
 	color: #FFFFFF
 }
-.monstera__text {
-	
-}
-.monsterat-items {
-}
-.item-monstera {
-}
-.item-monstera__icon {
-}
-.item-monstera__info {
-}
-.item-monsterat__icon {
-}
-.item-monstera__backgroud {
-}
+
 /*------------------clients--------------------------*/
 .clients {
 	padding: 120px 0px 100px 0px;
@@ -548,6 +569,7 @@ main{
 	display: flex;
 	flex-direction: column;
 }
+
 /*-------------------help-------------------------*/
 
 .help {
@@ -713,3 +735,16 @@ main{
 }
 
 
+.sunset__body,
+.monstera__body,
+.strafall__body{
+	transform: translateX(120%);
+	opacity: 0;
+	transition: all 0.4s ease 0s;
+}
+.sunset__body._active,
+.monstera__body._active,
+.strafall__body._active{
+	transform: translateX(0);
+	opacity: 1;
+}
