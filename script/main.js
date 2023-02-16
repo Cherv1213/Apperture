@@ -94,3 +94,25 @@ if (animItems.length > 0) {
 	
 	
 })(jQuery); 
+
+$(document).ready(function(){
+   $('.owl-carousel').owlCarousel({
+       margin:100,
+       loop:true,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true,
+        responsive:{
+           0:{
+               items:2,
+               margin:20,
+           },
+           500:{
+            margin:50,
+           },
+           1000:{
+               items:5,
+           }
+       }
+   });
+});
