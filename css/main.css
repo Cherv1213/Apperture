@@ -239,10 +239,12 @@ main{
 .menu__link {
 	color: #fff;
 }
+
 .menu__link:hover{
 	text-decoration: underline;
 }
 .menu__buttuon {
+	display: inline-block;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.25;
@@ -537,7 +539,30 @@ main{
 .owl-item {
 	text-align: center;
 }
-
+.owl-nav .owl-prev{
+	position: absolute;
+	top: 30;
+	left: -10px;
+}
+.owl-nav .owl-next{
+	position: absolute;
+	top: 30;
+	right: 10px;
+}
+.owl-nav .owl-prev::before{
+	content: "\f053";
+	font-weight: 900;
+	font-family: "Font Awesome 6 Free";
+	font-size: 2rem;
+}
+.owl-nav .owl-next::after{
+	content: "\f053";
+	font-weight: 900;
+	font-family: "Font Awesome 6 Free";
+	display: inline-block;
+	transform: rotate(180deg);
+	font-size: 2rem;
+}
 
 /*----------------starfall----------------------------*/
 
@@ -747,4 +772,13 @@ main{
 .strafall__body._active{
 	transform: translateX(0);
 	opacity: 1;
+}
+.ui-widget-header{
+	background-color: pink;
+	color: limegreen;
+}
+.ui-widget-content{
+	background-color: #000;
+	color: #fff;
+	font-size: 1rem;
 }
