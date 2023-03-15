@@ -1,12 +1,7 @@
 
 
 
-body{
-	color: #c4c3ca;
-	background-color: #1f2029;
-	overflow-x: hidden;
-	transition: all 300ms linear;
-}
+
 a {
 	cursor: pointer;
 }

@@ -1,8 +1,4 @@
-@media (max-width:414px){
-	.camera{
-		left: 0;
-	}
-}
+
 
 @media (max-width: 767.8px){
 	.button {
@@ -16,9 +12,10 @@
 
 
 @media (max-width: 991.8px){
+   
 	.header__body,
 	.menu__list{
-		column-gap: 15px;
+		column-gap: 15px !important;
 	}
 	.menu__buttuon{
 		padding: 8px 15px;
@@ -323,4 +320,8 @@
 	.footer__lower-copy {
 		padding: 0px 00px 30px 0px;
 	}
+}
+
+body.nav-active{
+   overflow: hidden;
 }
